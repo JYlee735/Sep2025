@@ -1,0 +1,24 @@
+body{
+background-color:#7AC5CD; 
+padding:25px; 
+font-size:200%;
+}
+
+h1{
+color:cyan; 
+padding: 15px; 
+background: #53868B; 
+width:fit-content;
+font-family:system-ui; 
+font-size:300%;
+}
+
+font{
+font-weight:500; 
+font-family:cursive;
+}
+
+p.class{
+line-height:150%; 
+border-style:dashed dashed double double;
+}
