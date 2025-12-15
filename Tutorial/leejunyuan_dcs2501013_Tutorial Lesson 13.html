@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>Form - Text Input</title>
+<link rel=icon href=download.jpeg type=image/jpg>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: verdana;
+        background-color: white;
+        margin: 50px 0;
+        color: #696969;
+    }
+    
+    form {
+        display: inline-block;
+    }
+    
+    table {
+        background-color: powderblue;
+        color: #696969;
+        font-family: verdana;
+        font-size: 160%;
+        text-align: left;
+        width: 600px;
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    th {
+        font-size: 160%;
+        font-weight: normal;
+        text-align: left;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    
+    tr {
+        display: table-row;
+    }
+    
+    td {
+        padding: 15px 20px;
+        font-size: 100%;
+        vertical-align: top;
+    }
+    
+    td:first-child {
+        width: 250px;
+        background-color: #191970;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 300px;
+        padding: 8px;
+        font-family: verdana;
+        font-size: 100%;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        height: 80px;
+        resize: vertical;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+        transform: scale(1.3);
+    }
+    
+    .radio-group {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+    .checkbox-group {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    select {
+        width: 300px;
+        padding: 8px;
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+        margin-top: 20px;
+        margin-right: 20px;
+        padding: 10px 25px;
+        font-family: verdana;
+        font-size: 100%;
+        background-color: powderblue;
+        border: 1px solid #696969;
+        color: #696969;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #add8e6;
+    }
+    
+    br {
+        display: none;
+    }
+</style>
+</head>
+<body topmargin=50>
+<center>
+<form>
+<table>
+    <tr>
+        <th colspan="2">Personal details:</th>
+    </tr>
+    <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="fname"></td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="lname"></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male">Male
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Female">Female
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Choose your favourite subjects:</td>
+        <td>
+            <div class="checkbox-group">
+                <input type="checkbox" name="fav_sub" value="DCS4103">DCS4103
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="fav_sub" value="DCS3003">DCS3003
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="fav_sub" value="MST1003">MST1003
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="fav_sub" value="MST2003">MST2003
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><textarea rows="4" cols="30" name="address"></textarea></td>
+    </tr>
+    <tr>
+        <td>Date of birth:</td>
+        <td><input type="date" name="dob"></td>
+    </tr>
+    <tr>
+        <td>Login password:</td>
+        <td><input type="password" name="loginpass"></td>
+    </tr>
+    <tr>
+        <td>Course:</td>
+        <td>
+            <select name="course">
+                <option value="0">-List of Courses-</option>
+                <optgroup label="Diploma In Computer Science">
+                    <option value="DCS_S1">Semester 1</option>
+                    <option value="DCS_S2">Semester 2</option>
+                    <option value="DCS_S3">Semester 3</option>
+                    <option value="DCS_S4">Semester 4</option>
+                    <option value="DCS_S5">Semester 5</option>
+                    <option value="DCS_S6">Semester 6</option>
+                </optgroup>
+                <option value="DUB">Diploma In Business</option>
+                <option value="DAS">Diploma In Airline Services</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</center>
+</body>
+</html>
